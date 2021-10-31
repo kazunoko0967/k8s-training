@@ -1,1 +1,2 @@
-# k8s-training
+# k8s-training on GKE
+
