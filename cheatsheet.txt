@@ -1,0 +1,13 @@
+## dockerコマンド
+//コンテナ起動時オプション
+docker run -it --name k8s-training -w /home  --mount type=bind,source=$(pwd),target=/home ba6acccedd29 bash
+
+--name コンテナ名指定
+-w	コンテナ起動時のワークディレクトリ指定
+--mount ローカルとコンテナのディレクトリを紐づける　-vは今後非推奨
+
+##vi 
+//read onlyファイル編集保存
+:w !sudo tee <ファイル名>
+:q!
+
